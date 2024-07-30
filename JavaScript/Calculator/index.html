@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+       .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .main1{
+        background-color: skyblue;
+        padding: 20px 20px;
+        margin-top: 70px;
+       }
+       #inputValue{
+        width: 600px;
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 30px;
+       }
+       .button{
+        padding: 30px 40px;
+        margin: 0px 20px 20px 0px;
+        font-size: 30px;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px;">Calculator</h1>
+    <section class="main">
+        
+        <div class="main1">
+            <input id="inputValue" type="text">
+            <div>
+                <div>
+                <button class="button" onclick="addInput('1')">1</button>
+                <button class="button" onclick="addInput('4')">4</button>
+                <button class="button" onclick="addInput('7')">7</button>
+                <button class="button" onclick="clearInput()">C</button>
+                <button class="button" onclick="calculate()">=</button>
+                </div>
+                <div>
+                <button class="button" onclick="addInput('2')">2</button>
+                <button class="button" onclick="addInput('5')">5</button>
+                <button class="button" onclick="addInput('8')">8</button>
+                <button class="button" onclick="addInput('+')">+</button>
+                <button class="button" onclick="addInput('-')">-</button>
+                </div>
+                <div>
+                <button class="button" onclick="addInput('3')">3</button>
+                <button class="button" onclick="addInput('6')">6</button>
+                <button class="button" onclick="addInput('7')">9</button>
+                <button class="button" onclick="addInput('*')">*</button>
+                <button class="button" onclick="addInput('/')">/</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function addInput(value){
+            document.getElementById("inputValue").value+=value;
+        }
+        function clearInput(){
+            document.getElementById('inputValue').value="";
+        }
+        function calculate(){
+            try{
+                let result = eval(document.getElementById("inputValue").value);
+                document.getElementById('inputValue').value=result;
+
+            }catch(error){
+                alert("inavlid number")
+            }
+        }
+    </script>
+</body>
+</html>
