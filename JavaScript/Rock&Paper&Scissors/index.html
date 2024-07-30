@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sessor Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      
+    </style>
+</head>
+<body class="bg-gray-600">
+   
+    <main>
+        <div class="text-center">
+            <h1 class="text-5xl font-extrabold text-white">Welcome to Rock paper sissor </h1>
+            <div class="flex mt-10">
+                <div class="w-8/12">
+                    <h1 class="text-3xl text-white font-extrabold">User</h1>
+                    
+                    <div>
+                    <div class=" float-start hidden">
+                      <button class="mt-20" onclick="checkgame('rock')">Rock</button><br>
+                      <button class="mt-20" onclick="checkgame('paper')" >paper</button><br>
+                      <button class="mt-20" onclick="checkgame('sissor')">sissor</button><br>
+                    </div>
+                    <div class="flex justify-center mt-20 h-72">
+                       <img id="rock" class="hidden rounded-full" width="45%" src="images/rock.gif" alt="">
+                    </div>
+                    <div class=" ">
+                        <button class="mt-20 text-2xl px-4 py-1 bg-white rounded-full " onclick="checkgame('rock')">Rock</button>
+                        <button class="mt-20 ml-10 text-2xl px-4 py-1 bg-white rounded-full" onclick="checkgame('paper')" >paper</button>
+                        <button class="mt-20 ml-10 text-2xl px-4 py-1 bg-white rounded-full" onclick="checkgame('sissor')">sissor</button>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="w-full">
+                     <h1 class="text-3xl text-white font-extrabold">Computer</h1>
+                     <div class="flex justify-center mt-20 h-72">
+                        <img id="rps" class="hidden rounded-full" width="25%" src="images/rock.gif" alt="">
+                     </div>
+                </div>
+            </div>
+            <span class="text-2xl bg-black px-4 py-1 rounded-full text-white font-bold mt-5" id="result">result</span><br>
+            <button class="text-5xl text-white font-bold mt-10" onclick="window.location.reload()">Play again</button>
+
+        </div>
+    </main>
+
+
+
+
+    
+    
+</body>
+<script src="jscript.js"></script>
+</html>
