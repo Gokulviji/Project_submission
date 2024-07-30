@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dice.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         
+         .player0.switch{
+            background-color: black;
+            color: white;
+         }
+         .player1.switch{
+            background-color: black;
+            color: white;
+         }
+    </style>
+</head>
+<body class="bg-yellow-300">
+
+    <h1  onclick="window.location.reload()" class="text-center text-5xl text-black font-extrabold cursor-pointer">Dice Game</h1>
+   <div class="flex  ml-5 ">
+    <div class="w-6/12">
+     <div id="firstp" class="player0 py-14 mt-5 px-5">
+        <h1 class="font-bold text-5xl flex">Player1 <span id="win0" class="hidden ml-10">won</span></h1>
+        <div class="flex-col justify-center items-center mt-8 ml-72">
+        <div class="flex  items-center">
+        <i class="fa-solid fa-user text-7xl"></i>
+        <h1 class="text-4xl bg-black py-2 px-4 text-white rounded-xl ml-10">score:  <span class="ml-2" id="player0"></span></h1>
+        </div>
+        <h1 class="text-4xl bg-gray-500 inline-block py-2 px-5 rounded-2xl mt-10">current Score:<span class="ml-4" id="player0total"></span></h1>
+        </div>
+     </div>
+     <div class="player1 py-10  mt-5">
+        <h1 class="font-bold text-5xl px-5 flex">Player2 <span id="win1" class="hidden ml-10">won</span></h1>
+        <div class="ml-72">
+        <div class="flex  items-center mt-8 ">
+            <i class="fa-solid fa-user text-7xl"></i>
+            <h1 class="text-4xl bg-black py-2 px-4 text-white rounded-xl ml-10">score:<span class="ml-4"  id="player1"></span></h1>
+            </div>
+        <h1 class="text-4xl bg-gray-500 inline-block py-2 px-5 rounded-2xl mt-10">current Score:<span class="ml-3" id="player1total"></span></h1>
+       </div>
+     </div>
+    </div>
+    <div>
+        <div class="container w-full ml-32 -mt-28">
+            <div class="cube" id="cube">
+                <div class="front">
+                    <span class="fas fa-circle"></span>
+                </div>
+                <div class="back">
+                        <pre class="firstPre"><span class="fas fa-circle"></span>    <span class="fas fa-circle"></span>    <span class="fas fa-circle"></span></pre><br>
+                        <pre class="secondPre"><span class="fas fa-circle"></span>    <span class="fas fa-circle"></span>    <span class="fas fa-circle"></span></pre>
+                </div>
+                <div class="top">
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                </div>
+                <div class="left">
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+    
+                </div>
+                <div class="right">
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+    
+                </div>
+                <div class="bottom">
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div>
+</div>
+ 
+    
+</body>
+<script src="script.js"></script>
+</html>
