@@ -21,7 +21,8 @@ https://gokulviji.github.io/photography-landing-page/
 https://gokulviji.github.io/Fitness/
 
 
-#JAVA SCRIPT
+
+# JAVA SCRIPT
 
 # Rock & Paper & Scissors
 
