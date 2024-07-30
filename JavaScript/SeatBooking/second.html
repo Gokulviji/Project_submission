@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .seat{
+            color: white;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .seat.Selected{
+            color:darkblue;
+        }
+        .seat.Occupied{
+            color:black;
+        }
+        .seat-conatiner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        i{
+            cursor: pointer;
+            rotate: 180deg;
+        
+        }
+        .scree-container{
+            
+        }
+        .booknow:hover{
+               background: black;
+               color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="main bg-gray-500 flex">
+
+        <!-- Booking-information -->
+
+    <div class="px-10 py-10 bg-gray-600 text-white w-3/1 ">
+       <h1 class="text-3xl text-center ">Select Your Seats</h1>
+       <div class="flex gap-5 mt-10 ">
+           <div class=" flex-row text-center justify-center">
+              
+              <i class="seat fa-solid fa-couch"></i>
+              <h1 class="text-lg mt-5">Available</h1>
+           </div>
+
+           <div class="flex-row text-center justify-center">
+             
+             <i class="seat Selected fa-solid fa-couch"></i>
+             <h1 class="text-lg mt-5">Selected</h1>
+           </div>
+
+           <div class="flex-row text-center justify-center">
+             
+             <i class="seat Occupied fa-solid fa-couch"></i>
+             <h1 class="text-lg mt-5">Occupied</h1>
+           </div>
+        </div>
+
+        <div id="totalamount" class="mt-40 text-black bg-gray-300 py-4 px-6 rounded-xl">
+            <div class="">
+                <p class="text-xl ">Lower Row Seat  : <span id="firstrow"></span></p>
+                <p  class="text-xl mt-5">Middle Row Seat: <span id="secondrow"></span></p>
+                <p  class="text-xl mt-5">Higher Row Seat: <span id="thirdrow"></span></p>
+            </div>
+            <p class="text-2xl mt-8">Totalamount:<span id="amount"></span></p>
+           
+        </div>
+        <P class="booknow text-center mt-20 text-2xl bg-white py-2 px-4 text-black rounded-full cursor-pointer font-bold">Book NOw</P>
+    </div>
+
+
+<!-- Seat and screeen view -->
+
+    <div class="scree-container w-full  bg-slate-400">
+        <h1 class="text-center text-xl">screen</h1>
+        <div class=" mx-20 h-2 bg-white mt-5 text-center"></div>
+
+        <div class="seat-conatiner   mt-10 pb-[130px]">
+                  <h1 class="text-sm mt-5">Lower-100</h1>
+        <div class="lower">
+            <div class="row flex  gap-4">
+               
+                <i  class="seat fa-solid fa-couch"></i>
+                <i class="seat  fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i><br><br><br>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+
+            </div>
+
+            <div class="row flex  gap-4">
+               
+
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+
+            </div><br>
+
+        </div>
+
+            <h1 class="text-sm mt-5">Middle-200</h1>
+          <div class="middle">
+            <div class="row flex  gap-4">
+               
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat middle fa-solid fa-couch"></i>
+                <i class="seat middle Occupied fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat  fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+
+            </div>
+
+            
+            <div class="row flex  gap-4">
+               
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat  fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+
+            </div><br>
+
+        </div>
+            <h1 class="text-sm mt-5">Higher-300</h1>
+        <div class="higher">
+            <div class="row flex  gap-4">
+               
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i><br><br><br>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+            </div>
+
+            
+            <div class="row flex  gap-4">
+                <i class="seat upper fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i><br><br><br>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat Occupied fa-solid fa-couch"></i>
+                <i class="seat fa-solid fa-couch"></i>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+    </main>
+</body>
+<script src="another.js"></script>
+</html>

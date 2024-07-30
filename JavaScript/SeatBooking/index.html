@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header class="flex justify-between text-white px-20 py-5 bg-black">
+        <h1 class="text-3xl ">Seat Booking</h1>
+        <nav>
+            <ol class="flex">
+                <li class="mr-10 text-lg hover:text-white cursor-pointer"><a href="">Movie</a></li>
+                <li class="mr-10 text-lg hover:text-white cursor-pointer"><a href="">TV shows</a></li>
+                <li class="mr-10 text-lg hover:text-white cursor-pointer"><a href="">Social Programs</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section class="main">
+
+        <div class="wrapper">
+            <i id="left" class="flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                  </svg>
+            </i>
+            
+            <ul class="carousel ">
+              <li class="card">
+                <div class="img"><img src="images/download (1).jpeg" alt="img" draggable="false"></div>
+                <h2>Avengers</h2>
+                <span id="amount1" onclick="addInput(100)"  class="bg-black px-3 rounded-xl text-white py-1 cursor-pointer"><a href="second.html">Book Now</a></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="images/download.jpeg" alt="img" draggable="false"></div>
+                <h2>Batman</h2>
+                <span id="amount2" onclick="addInput(lower)"  class="bg-black px-3 rounded-xl text-white py-1 cursor-pointer"><a href="second.html">Book Now</a></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="images/images.jpeg" alt="img" draggable="false"></div>
+                <h2>John Wick</h2>
+                <span id="amount3" onclick="addInput(middle)"  class="bg-black px-3 rounded-xl text-white py-1 cursor-pointer"><a href="second.html">Book Now</a></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="images/img4.jpeg" alt="img" draggable="false"></div>
+                <h2>Black Panther</h2>
+                <span id="amount4" onclick="addInput(upper)"  class="bg-black px-3 rounded-xl text-white py-1 cursor-pointer"><a href="second.html">Book Now</a></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="images/img5.jpeg" alt="img" draggable="false"></div>
+                <h2>Ant Man</h2>
+                <span id="amount" onclick="addInput(500)"  class="bg-black px-3 rounded-xl text-white py-1 cursor-pointer"><a href="second.html">Book Now</a></span>
+              </li>
+              <li class="card">
+                <div class="img"><img src="images/img6.jpeg" alt="img" draggable="false"></div>
+                <h2>End Game</h2>
+                <span id="amount" onclick="addInput(600)"  class="bg-black px-3 rounded-xl text-white py-1 cursor-pointer"><a href="second.html">Book Now</a></span>
+              </li>
+            </ul>
+            <i id="right" class="flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              </i>
+          </div>
+      
+
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
