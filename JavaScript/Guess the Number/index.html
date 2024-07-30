@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .number1{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body class=" bg-lime-500">
+    <main class="mt-20">
+        <div class="text-center">
+            <h1 class="text-4xl text-black">Guess The Number between 1 to 100</h1>
+            <input type="number" name="Number" id="usernumber" class="number1 outline-none mt-10 rounded-full py-2 px-3">
+            <h1 id="status" class="text-2xl mt-5 text-black">please enter a number</h1><br>
+            <p class="text-xl text-black">Attempt:<span id="attempt"></span></p><br>
+            <div class="flex justify-center gap-5">
+            <button class="px-3 rounded-3xl text-2xl py-2 bg-gray-600 text-black" onclick="inputnumber()">Guess</button><br>
+            <button class="px-3 rounded-3xl text-2xl py-2 bg-gray-600 text-black" onclick="window.location.reload()">play again</button>
+            </div>
+        </div>
+        <div  class="flex justify-center mt-14 ">
+        <img  class="Celimg hidden " src="images/celgif.gif" width="40%" alt="">
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
