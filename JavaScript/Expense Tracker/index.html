@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        input{
+            outline: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .widthdrawl{
+             background-color: red;
+             display: inline-block;
+             color: white;
+             padding: 5px 20px;
+             border-radius: 5px;
+             margin-bottom: 10px;
+        }
+        .profit{
+            background-color: green;
+            display: inline-block;
+             color: white;
+             padding: 5px 20px;
+             border-radius: 5px;
+             margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="bg-blue-950">
+   <main >
+       <h1 class="text-3xl text-center text-white">Expense Tracker</h1>
+
+       <div class="flex mt-16">
+           
+        <div class="w-full bg-white py-10 ml-10">
+           <div class="flex justify-around ">  
+
+
+            <div>
+                <h1 class="text-3xl font-extrabold">Your Balance</h1><br><br>
+                <span id="balance" class=" text-3xl">0</span>
+             </div>
+             <div>
+                 <h1 class="text-3xl font-extralight">INCOME</h1><br><br>
+                 <span class="text-3xl" id="income">0</span>
+             </div>
+             <div>
+                 <h1 class="text-3xl font-extralight">EXPNSES</h1><br><br>
+                 <span class="text-3xl" id="expnses">0</span>
+             </div>
+
+
+
+         
+           </div>
+                
+            
+           <form id="expnessform" action="">
+               <h1 class="ml-12 mt-32 text-3xl">Add new Transaction</h1>
+               <div class="flex justify-around text-center mt-20">
+               <div>
+                <label class="text-2xl" for="Transaction"  >Transaction:</label>
+                <input type="text" name="Transaction" id="Transaction">
+               </div>
+              <div>
+                <label class="text-2xl" for="Amount" >Amount:</label>
+                <input type="number" name="Amount" id="Amount"><br><br>
+              </div>
+              </div>
+              
+               <button class="ml-8 text-xl py-1 px-4 bg-black text-white rounded-xl mt-20" >Add Transdaction</button>
+           </form>
+        </div>
+
+
+        <div class="w-full bg-black text-white py-10 ml-10 mr-10">
+            <div class=" text-5xl ml-10 font-extrabold">
+               <h1>Profile</h1>
+            </div>
+            <div class=" mt-20 text-4xl  ">
+                    <i class="fa-solid fa-user mr-10 flex justify-center items-center"><h1 class="ml-10">Gokul</h1></i>
+            </div>
+            <div class="mt-20">
+                <h1 class=" text-5xl ml-10 font-extrabold ">Transaction</h1>
+                <ul id="history" class="text-center text-3xl mt-16 w-[700px]"></ul>
+            </div>
+
+        </div>
+
+       </div>
+
+
+   </main>
+
+</body>
+<script src="script.js"></script>
+</html>
