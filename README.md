@@ -57,3 +57,6 @@ https://gokulviji.github.io/Git-Account-Finder/
 # Food REC
 https://gokulviji.github.io/FoodRec/
 
+# Movie Search
+https://helpful-cucurucho-512df7.netlify.app/
+
