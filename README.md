@@ -60,3 +60,6 @@ https://gokulviji.github.io/FoodRec/
 # Movie Search
 https://helpful-cucurucho-512df7.netlify.app/
 
+# Weather app
+https://extraordinary-donut-72539e.netlify.app/
+
