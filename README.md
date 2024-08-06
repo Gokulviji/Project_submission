@@ -64,5 +64,5 @@ https://helpful-cucurucho-512df7.netlify.app/
 https://extraordinary-donut-72539e.netlify.app/
 
 # Book Finder app
-https://react-book-finder.netlify.app/
+https://book-finer.netlify.app/
 
