@@ -32,9 +32,6 @@ https://gokulviji.github.io/rock_paper_sissor/
 
 https://gokulviji.github.io/seatBooking/
 
-# Book Finder app
-https://react-book-finder.netlify.app/
-
 # Guess the Number
 
 https://gokulviji.github.io/guessnumber/
@@ -65,4 +62,7 @@ https://helpful-cucurucho-512df7.netlify.app/
 
 # Weather app
 https://extraordinary-donut-72539e.netlify.app/
+
+# Book Finder app
+https://react-book-finder.netlify.app/
 
