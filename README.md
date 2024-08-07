@@ -55,7 +55,7 @@ https://gokulviji.github.io/Git-Account-Finder/
 # React Repo
 
 # Food REC
-https://gokulviji.github.io/FoodRec/
+https://github.com/Gokulviji/FoodRec.git
 
 # Movie Search
 https://helpful-cucurucho-512df7.netlify.app/
