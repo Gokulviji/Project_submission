@@ -60,6 +60,9 @@ https://github.com/Gokulviji/FoodRec.git
 # YouTube clone
 https://github.com/Gokulviji/youtubeclone.git
 
+# Weather app
+https://github.com/Gokulviji/Weather-app.git
+
 # Movie Search
 https://helpful-cucurucho-512df7.netlify.app/
 
