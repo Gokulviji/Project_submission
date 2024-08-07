@@ -57,14 +57,11 @@ https://gokulviji.github.io/Git-Account-Finder/
 # Food REC
 https://github.com/Gokulviji/FoodRec.git
 
+# YouTube clone
+https://github.com/Gokulviji/youtubeclone.git
+
 # Movie Search
 https://helpful-cucurucho-512df7.netlify.app/
-
-# Weather app
-https://extraordinary-donut-72539e.netlify.app/
-
-# Book Finder app
-https://book-finer.netlify.app/
 
 # Chat App
 https://github.com/Gokulviji/ChatApplication.git
