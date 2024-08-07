@@ -64,7 +64,7 @@ https://github.com/Gokulviji/youtubeclone.git
 https://github.com/Gokulviji/Weather-app.git
 
 # Movie Search
-https://helpful-cucurucho-512df7.netlify.app/
+https://github.com/Gokulviji/Movie-Search.git
 
 # Chat App
 https://github.com/Gokulviji/ChatApplication.git
